@@ -1,0 +1,50 @@
+:root {
+  box-sizing: border-box;
+  --spacing: 0px;
+  --blur: 0px;
+  --base: #ffffff;
+  --saturation: 100%;
+  --brightness: 100%;
+  --hue-rotate: 0deg;
+}
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em;
+}
+
+input {
+  width: 100%;
+  margin: 0.9em auto;
+}
+img {
+  margin: 1em auto;
+  max-width: 100%;
+  background: var(--base);
+  padding: var(--spacing);
+  filter: brightness(var(--brightness)) hue-rotate(var(--hue-rotate))
+    saturate(var(--saturation)) blur(var(--blur));
+}
+
+#img {
+  max-width: 100%;
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+  background: var(--base);
+}
+.hl {
+  color: var(--base);
+}

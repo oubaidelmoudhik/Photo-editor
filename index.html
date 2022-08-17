@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoped CSS Variables and JS</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Play Around with <span class="hl">The Controls</span>!</h2>
+
+    <div class="controls">
+      <!-- <label for="spacing">Spacing:</label>
+      <input
+        id="spacing"
+        type="range"
+        name="spacing"
+        min="10"
+        max="200"
+        value="0"
+        data-sizing="px"
+      /> -->
+      <div class="slider-control">
+        <label for="blur">Blur:</label>
+        <input
+          id="blur"
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <div class="slider-control">
+        <label for="base">Saturation</label>
+        <input
+          id="saturation"
+          type="range"
+          name="saturation"
+          min="0"
+          max="200"
+          value="10"
+          data-sizing="%"
+        />
+      </div>
+
+      <div class="slider-control">
+        <label for="base">Brightness</label>
+        <input
+          id="brightness"
+          type="range"
+          name="brightness"
+          min="0"
+          max="200"
+          value="100"
+          data-sizing="%"
+        />
+      </div>
+      <div class="slider-control">
+        <label for="base">Hue</label>
+        <input
+          id="hue-rotate"
+          type="range"
+          name="hue-rotate"
+          min="0"
+          max="360"
+          value="0"
+          data-sizing="deg"
+        />
+      </div>
+    </div>
+
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" />
+  </body>
+</html>
